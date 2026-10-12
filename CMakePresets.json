@@ -1,0 +1,17 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 31, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "windows-x64",
+      "displayName": "Windows x64 (Visual Studio 2026)",
+      "generator": "Visual Studio 18 2026",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build"
+    }
+  ],
+  "buildPresets": [
+    { "name": "release", "configurePreset": "windows-x64", "configuration": "Release" },
+    { "name": "debug", "configurePreset": "windows-x64", "configuration": "Debug" }
+  ]
+}
